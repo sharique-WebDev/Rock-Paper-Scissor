@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+}
+
+.container>* {
+    margin: 10px 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.container .heading {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.fs-28 {
+    font-size: 28px;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 45px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+#rock {
+    background-color: hsl(0, 100%, 40%);
+}
+
+#rock:hover {
+    background-color: hsl(0, 100%, 60%);
+}
+
+#paper {
+    background-color: hsl(240, 100%, 40%);
+}
+
+#paper:hover {
+    background-color: hsl(240, 100%, 60%);
+}
+
+#scissor {
+    background-color: hsl(120, 100%, 25%);
+}
+
+#scissor:hover {
+    background-color: hsl(120, 100%, 35%);
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+.border {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+#yourScore {
+    color: green;
+}
+
+#compScore {
+    color: red;
+}
+
+@media screen and (max-width: 440px) {
+    .container .heading {
+        font-size: 28px;
+    }
+
+    .btn {
+        padding: 15px;
+        font-size: 40px;
+    }
+
+    .fs-22 {
+        font-size: 16px;
+    }
+
+    .fs-28 {
+        font-size: 20px;
+    }
+
+    .score {
+        gap: 4px;
+    }
+
+    .container>* {
+        margin: 8px 2px;
+    }
+}
